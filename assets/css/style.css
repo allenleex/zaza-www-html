@@ -138,6 +138,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   background: #ef6603;
 }
+.nav-link:focus, .nav-link:hover {
+    color: #fff;
+}
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -533,7 +536,10 @@ section {
   color: #fff;
   text-decoration: none;
 }
-
+.about h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
@@ -649,6 +655,50 @@ section {
     align-items: center;
     justify-content: flex-end;
   }
+}
+.cta .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #232533;
+  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+.cta .icon-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
+}
+.cta .icon {
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 30px);
+}
+.cta .icon i {
+  font-size: 64px;
+  line-height: 1;
+  transition: 0.5s;
+}
+.cta .title {
+  margin-left: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.cta .title a {
+  color: #ef6603;
+  transition: ease-in-out 0.3s;
+}
+.cta .title a:hover {
+  color: #ef6603;
+}
+.cta .description {
+  font-size: 14px;
+  margin-left: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
