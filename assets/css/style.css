@@ -135,8 +135,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar li:hover > a {
+  background: transparent;
+  color: #ef6603;
+}
+.navbar a:hover, .navbar .active, .navbar .active:hover, .navbar .active:focus {
   background: #ef6603;
+  font-weight: 600;
+  color: #fff;
 }
 .nav-link:focus, .nav-link:hover {
     color: #fff;
@@ -286,6 +292,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Video Section
+--------------------------------------------------------------*/
+#video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
@@ -293,6 +310,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   position: relative;
   background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);
+  /* background: rgba(0,0,0,0.6); */
   padding: 0;
 }
 #hero .carousel-container {
@@ -1388,7 +1406,7 @@ section {
   background: #14151c;
   color: #fff;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
   padding: 30px 0;
 }
 #footer h3 {
@@ -1398,13 +1416,12 @@ section {
   position: relative;
   font-family: "Poppins", sans-serif;
   padding: 0;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
 }
 #footer p {
   font-size: 15;
-  font-style: italic;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 10px 0;
 }
 #footer .social-links {
   margin: 0 0 40px 0;
