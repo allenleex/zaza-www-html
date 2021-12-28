@@ -1092,7 +1092,8 @@ section {
   right: -68px;
   transform: rotate(45deg);
   z-index: 1;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 600;
   padding: 1px 0 3px 0;
   background: #ef6603;
   color: #fff;
